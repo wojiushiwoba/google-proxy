@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = "https://www.bing.com/search?setmkt=en-US&q=%s";//your website url
+  let target = "https://www.bing.com/search?form=MY0291&OCID=MY0291&q=Bing+Al&showconv=1";//your website url
   //   if (
   //     req.url.startsWith("/api") ||
   //     req.url.startsWith("/auth") ||
