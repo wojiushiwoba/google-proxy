@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = "https://www.google.com/";//your website url
+  let target = "https://chat.openai.com/";//your website url
   //   if (
   //     req.url.startsWith("/api") ||
   //     req.url.startsWith("/auth") ||
@@ -16,7 +16,7 @@ module.exports = (req, res) => {
     changeOrigin: true,
     pathRewrite: {
       // rewrite request path `/backend`
-      //  /backend/user/login => http://google.com/user/login
+      //  /backend/user/login => http://openai.com/user/login
       //   "^/backend/": "/",
     },
   })(req, res);
